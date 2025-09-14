@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
     body { font-family: 'Inter', sans-serif; }
     .hero-bg { background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%); }
     .section-card { transition: all 0.3s ease; }
@@ -16,134 +16,134 @@
 </head>
 <body class="bg-gray-50">
 
-<!-- Navigation -->
-<nav class="bg-white shadow-lg sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
-    <div class="flex items-center space-x-3">
-      <img src="assets/images/logo.png" alt="StrategiMind Logo" class="w-10 h-10">
-      <span class="text-xl font-bold text-gray-800">
-        <span class="text-blue-600">Strategi</span>Mind
-      </span>
-    </div>
-    <div class="hidden md:flex space-x-6">
-      <a href="#hero" class="text-gray-700 hover:text-blue-600 font-medium">Accueil</a>
-      <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium">Services</a>
-      <a href="#apropos" class="text-gray-700 hover:text-blue-600 font-medium">À propos</a>
-      <a href="#produits" class="text-gray-700 hover:text-blue-600 font-medium">Produits</a>
-      <a href="#partenaires" class="text-gray-700 hover:text-blue-600 font-medium">Partenaires</a>
-      <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Contact</a>
-    </div>
-  </div>
-</nav>
-
-<!-- Hero Section -->
-<section id="hero" class="hero-bg py-20 text-center text-white">
-  <div class="max-w-4xl mx-auto">
-    <img src="assets/images/logo.png" alt="StrategiMind" class="mx-auto w-20 mb-6">
-    <h1 class="text-4xl lg:text-5xl font-bold mb-4">
-      Transformer votre vision avec le Cloud, l’IA & la Cybersécurité
-    </h1>
-    <p class="text-lg text-gray-300 mb-6">
-      Votre partenaire stratégique au Maroc pour réussir votre transformation numérique.
-    </p>
-    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold">
-      🚀 Demander une démo
-    </a>
-  </div>
-</section>
-
-<!-- Services -->
-<section id="services" class="py-20 bg-white">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold text-gray-800 mb-12">Nos Services</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="section-card bg-gray-50 p-8 rounded-xl shadow-lg">
-        <i class="fas fa-cloud text-blue-600 text-3xl mb-4"></i>
-        <h3 class="text-xl font-semibold mb-2">Cloud & IA</h3>
-        <p class="text-gray-600">Adoption sécurisée du Cloud et intégration de l’IA dans vos processus métiers.</p>
-      </div>
-      <div class="section-card bg-gray-50 p-8 rounded-xl shadow-lg">
-        <i class="fas fa-shield-alt text-green-600 text-3xl mb-4"></i>
-        <h3 class="text-xl font-semibold mb-2">Cybersécurité</h3>
-        <p class="text-gray-600">Stratégies de sécurité pour protéger vos données et votre organisation.</p>
-      </div>
-      <div class="section-card bg-gray-50 p-8 rounded-xl shadow-lg">
-        <i class="fas fa-chalkboard-teacher text-orange-600 text-3xl mb-4"></i>
-        <h3 class="text-xl font-semibold mb-2">Formation & Coaching</h3>
-        <p class="text-gray-600">Accompagner vos équipes dans la transformation numérique et la gouvernance.</p>
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center space-x-3">
+          <img src="logo.png" alt="Logo StrategiMind" class="h-10">
+          <div>
+            <div class="text-xl font-bold text-gray-800">
+              <span class="text-blue-600">Strategi</span>Mind
+            </div>
+            <div class="text-xs text-gray-500 font-medium">CONSULTING</div>
+          </div>
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium">Services</a>
+          <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium">À propos</a>
+          <a href="#produits" class="text-gray-700 hover:text-blue-600 font-medium">Produits</a>
+          <a href="#partenaires" class="text-gray-700 hover:text-blue-600 font-medium">Partenaires</a>
+          <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Contact</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </nav>
 
-<!-- À propos -->
-<section id="apropos" class="py-20 bg-gray-50">
-  <div class="max-w-5xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold text-gray-800 mb-6">À propos</h2>
-    <p class="text-lg text-gray-600">
-      StrategiMind Consulting est un cabinet spécialisé en cybersécurité, intelligence artificielle et transformation numérique.
-      Notre mission : accompagner les organisations marocaines et internationales dans leur stratégie digitale avec sécurité et innovation.
-    </p>
-  </div>
-</section>
-
-<!-- Produits -->
-<section id="produits" class="py-20 bg-white">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold text-gray-800 mb-6">Nos Solutions</h2>
-    <p class="text-gray-600 mb-8">
-      Découvrez notre solution GRC propulsée par l’IA pour optimiser la gestion des risques et la conformité.
-    </p>
-    <div class="section-card bg-gray-50 p-10 rounded-xl shadow-lg">
-      <i class="fas fa-robot text-purple-600 text-4xl mb-4"></i>
-      <h3 class="text-2xl font-semibold mb-2">GRC avec IA</h3>
-      <p class="text-gray-600">Une plateforme intelligente pour piloter vos risques stratégiques et la conformité réglementaire.</p>
+  <!-- Hero -->
+  <section class="hero-bg py-24 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">
+        Transformer votre vision en réalité numérique
+      </h1>
+      <p class="text-lg text-gray-300 mb-8">
+        Spécialistes en Cloud, IA et Cybersécurité, nous accompagnons vos projets de transformation digitale.
+      </p>
+      <a href="#contact" class="bg-cyan-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-cyan-700">
+        Demander une démo
+      </a>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Partenaires -->
-<section id="partenaires" class="py-20 bg-gray-50">
-  <div class="max-w-5xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold text-gray-800 mb-12">Nos Partenaires</h2>
-    <div class="flex justify-center items-center space-x-12">
-      <img src="assets/images/microsoft.png" alt="Microsoft" class="h-12">
-      <img src="assets/images/gartner.png" alt="Gartner" class="h-12">
-      <img src="assets/images/archimate.png" alt="ArchiMate" class="h-12">
+  <!-- Services -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-12">Nos Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div class="section-card bg-gray-50 p-6 rounded-xl">
+          <img src="assets/images/modern-office.jpg" alt="Diagnostic Stratégique" class="rounded-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2">Diagnostic Stratégique</h3>
+          <p class="text-gray-600 text-sm">Évaluation 360° de la maturité numérique et des risques pour une vision claire de votre transformation.</p>
+        </div>
+
+        <div class="section-card bg-gray-50 p-6 rounded-xl">
+          <img src="assets/images/governance-objective.jpg" alt="Gouvernance et Risques" class="rounded-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2">Gouvernance & Risques</h3>
+          <p class="text-gray-600 text-sm">Cadre robuste de gouvernance pour aligner vos initiatives stratégiques et gérer efficacement les risques.</p>
+        </div>
+
+        <div class="section-card bg-gray-50 p-6 rounded-xl">
+          <img src="assets/images/planning-objective.jpg" alt="Planification Stratégique" class="rounded-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2">Planification Stratégique</h3>
+          <p class="text-gray-600 text-sm">Feuille de route sécurisée pour maximiser la valeur de votre transformation numérique.</p>
+        </div>
+
+        <div class="section-card bg-gray-50 p-6 rounded-xl">
+          <img src="assets/images/business-structure.jpg" alt="Formation et Coaching" class="rounded-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2">Formation & Coaching</h3>
+          <p class="text-gray-600 text-sm">Développement des compétences et accompagnement des dirigeants dans la conduite du changement.</p>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Contact -->
-<section id="contact" class="py-20 bg-white">
-  <div class="max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold text-gray-800 mb-6">Contactez-nous</h2>
-    <p class="text-gray-600 mb-6">Nous serions ravis d’échanger avec vous.</p>
-    <form class="space-y-4">
-      <input type="text" placeholder="Votre nom" class="w-full p-3 border rounded-lg">
-      <input type="email" placeholder="Votre email" class="w-full p-3 border rounded-lg">
-      <textarea placeholder="Votre message" rows="4" class="w-full p-3 border rounded-lg"></textarea>
-      <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
-        Envoyer
-      </button>
-    </form>
-    <div class="mt-6 space-y-2 text-gray-600">
-      <p><i class="fas fa-envelope mr-2"></i>contact@strategimind.ma</p>
-      <p><i class="fas fa-phone mr-2"></i>+212 722039772</p>
-      <p><i class="fas fa-map-marker-alt mr-2"></i>Casablanca, Maroc</p>
+  <!-- À propos -->
+  <section id="about" class="py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">À propos</h2>
+      <p class="text-gray-600 max-w-3xl mx-auto">
+        StrategiMind Consulting est un cabinet spécialisé en Cloud, Intelligence Artificielle et Cybersécurité. 
+        Notre mission est de renforcer la résilience numérique des organisations et de maximiser leur performance à travers l’innovation.
+      </p>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer class="bg-gray-900 text-white py-8 text-center">
-  <p class="text-gray-400">© 2025 StrategiMind Consulting. Tous droits réservés.</p>
-  <div class="flex justify-center space-x-4 mt-4">
-    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
-    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
-  </div>
-</footer>
+  <!-- Produits -->
+  <section id="produits" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Nos Produits</h2>
+      <p class="text-gray-600 mb-6">
+        Découvrez notre solution GRC intégrant l’IA pour une gestion intelligente des risques et de la conformité.
+      </p>
+      <img src="assets/images/ai-use-cases.jpg" alt="GRC avec IA" class="mx-auto rounded-lg shadow-lg max-h-80">
+    </div>
+  </section>
+
+  <!-- Partenaires -->
+  <section id="partenaires" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-10">Nos Partenaires</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        <div class="flex justify-center">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="h-16">
+        </div>
+        <div class="flex justify-center">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Gartner_logo.svg" alt="Gartner" class="h-12">
+        </div>
+        <div class="flex justify-center">
+          <img src="assets/images/strategimind-logo.svg" alt="ArchiMate" class="h-16">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6">Contactez-nous</h2>
+      <p class="text-gray-600 mb-6">Pour plus d’informations ou pour planifier une démo, contactez-nous :</p>
+      <a href="mailto:contact@strategimind.ma" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700">
+        <i class="fas fa-envelope mr-2"></i> contact@strategimind.ma
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p class="text-gray-400">© 2024 StrategiMind Consulting. Tous droits réservés.</p>
+  </footer>
 
 </body>
 </html>
-
