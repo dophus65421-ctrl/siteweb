@@ -3,138 +3,157 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StrategiMind Consulting - Cloud, IA & Cybersécurité</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>StrategiMind Consulting - Transformation Cloud & IA</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
     body { font-family: 'Inter', sans-serif; }
-    .hero-bg { background: linear-gradient(135deg, #1e293b, #334155); }
-    .section-card { transition: all 0.3s ease; }
-    .section-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
-    .partner-logo { height: 60px; object-fit: contain; filter: grayscale(100%); transition: all 0.3s; }
-    .partner-logo:hover { filter: grayscale(0%); transform: scale(1.05); }
+    /* Animation carrousel partenaires */
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-scroll {
+      display: flex;
+      animation: scroll 20s linear infinite;
+    }
   </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 text-gray-800">
 
-  <!-- Navbar -->
-  <nav class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
+  <!-- NAVBAR -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 h-16">
+      <!-- Logo -->
       <div class="flex items-center space-x-3">
-        <img src="./logo.png" alt="StrategiMind Logo" class="h-10 w-auto">
-        <div>
-          <span class="text-xl font-bold text-blue-600">Strategi</span><span class="text-xl font-bold text-gray-800">Mind</span>
-          <div class="text-xs text-gray-500">CONSULTING</div>
-        </div>
+        <img src="./logo.png" alt="StrategiMind Logo" class="h-10">
+        <span class="font-bold text-xl text-blue-700">StrategiMind</span>
       </div>
-      <div class="hidden md:flex space-x-6">
+      <!-- Menu -->
+      <div class="hidden md:flex space-x-8 font-medium">
         <a href="#services" class="hover:text-blue-600">Services</a>
-        <a href="#about" class="hover:text-blue-600">À propos</a>
-        <a href="#solutions" class="hover:text-blue-600">Solutions</a>
+        <a href="#secteurs" class="hover:text-blue-600">Secteurs</a>
         <a href="#partenaires" class="hover:text-blue-600">Partenaires</a>
         <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Contact</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="hero-bg text-center text-white py-20">
-    <div class="max-w-3xl mx-auto">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Accompagnement Cloud, IA & Cybersécurité</h1>
-      <p class="text-lg text-gray-300 mb-6">Transformez votre organisation grâce à une adoption sécurisée du Cloud et de l’IA.</p>
-      <a href="#contact" class="bg-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-700"><i class="fas fa-calendar mr-2"></i>Demander une démo</a>
+  <!-- HERO -->
+  <section class="bg-gradient-to-r from-blue-900 to-cyan-700 text-white py-24 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">Accélérez votre Transformation Cloud & IA</h1>
+      <p class="text-lg md:text-xl text-gray-200 mb-8">
+        Nous aidons les organisations à adopter le Cloud et l’IA en toute sécurité, pour générer un maximum de valeur.
+      </p>
+      <a href="#contact" class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+        <i class="fas fa-calendar mr-2"></i> Consultation Gratuite
+      </a>
     </div>
   </section>
 
-  <!-- Services -->
-  <section id="services" class="py-16 bg-white">
+  <!-- SERVICES -->
+  <section id="services" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-12">Nos Services</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="section-card bg-gray-50 p-6 rounded-lg text-center">
-          <img src="./assets/images/strategy-diagram.jpg" alt="Diagnostic" class="h-40 w-full object-cover rounded mb-4">
-          <h3 class="text-xl font-semibold">Diagnostic Stratégique</h3>
-          <p class="text-gray-600 mt-2">Évaluez la maturité numérique et identifiez les opportunités de transformation.</p>
+      <div class="grid md:grid-cols-3 gap-10">
+        
+        <!-- Service 1 -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-6 hover:-translate-y-2 transition">
+          <img src="./assets/images/modern-office.jpg" alt="Diagnostic Stratégique" class="h-40 w-full object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2">Diagnostic Stratégique</h3>
+          <p class="text-gray-600">Évaluation 360° de la maturité numérique et cybersécurité.</p>
         </div>
-        <div class="section-card bg-gray-50 p-6 rounded-lg text-center">
-          <img src="./assets/images/architecture-principles.jpg" alt="Architecture" class="h-40 w-full object-cover rounded mb-4">
-          <h3 class="text-xl font-semibold">Architecture d’Affaires</h3>
-          <p class="text-gray-600 mt-2">Définissez une architecture robuste alignée à vos objectifs.</p>
+
+        <!-- Service 2 -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-6 hover:-translate-y-2 transition">
+          <img src="./assets/images/architecture-principles.jpg" alt="Architecture d’Affaires" class="h-40 w-full object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2">Architecture d’Affaires</h3>
+          <p class="text-gray-600">Conception de modèles d’architecture et de gouvernance adaptés.</p>
         </div>
-        <div class="section-card bg-gray-50 p-6 rounded-lg text-center">
-          <img src="./assets/images/risk-management.jpg" alt="Gouvernance" class="h-40 w-full object-cover rounded mb-4">
-          <h3 class="text-xl font-semibold">Gouvernance & Risques</h3>
-          <p class="text-gray-600 mt-2">Mettez en place un cadre de gouvernance et de gestion des risques adapté.</p>
+
+        <!-- Service 3 -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-6 hover:-translate-y-2 transition">
+          <img src="./assets/images/risk-management.jpg" alt="Gouvernance & Risques" class="h-40 w-full object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2">Gouvernance & Risques</h3>
+          <p class="text-gray-600">Gestion stratégique des risques et conformité réglementaire.</p>
         </div>
-        <div class="section-card bg-gray-50 p-6 rounded-lg text-center">
-          <img src="./assets/images/roadmap-planning.jpg" alt="Planification" class="h-40 w-full object-cover rounded mb-4">
-          <h3 class="text-xl font-semibold">Planification Stratégique</h3>
-          <p class="text-gray-600 mt-2">Construisez une feuille de route claire et sécurisée pour vos projets.</p>
+
+        <!-- Service 4 -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-6 hover:-translate-y-2 transition">
+          <img src="./assets/images/planning-objective.jpg" alt="Planification Stratégique" class="h-40 w-full object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2">Planification Stratégique</h3>
+          <p class="text-gray-600">Développement de feuilles de route sécurisées et réalistes.</p>
         </div>
-        <div class="section-card bg-gray-50 p-6 rounded-lg text-center">
-          <img src="./assets/images/cloud-strategy.jpg" alt="Cloud & IA" class="h-40 w-full object-cover rounded mb-4">
-          <h3 class="text-xl font-semibold">Cloud & IA</h3>
-          <p class="text-gray-600 mt-2">Adoptez le Cloud et l’IA avec une approche sécurisée et adaptée.</p>
+
+        <!-- Service 5 -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-6 hover:-translate-y-2 transition">
+          <img src="./assets/images/cloud-strategy.jpg" alt="Cloud & IA" class="h-40 w-full object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2">Cloud & IA</h3>
+          <p class="text-gray-600">Accompagnement dans l’adoption des technologies émergentes.</p>
         </div>
-        <div class="section-card bg-gray-50 p-6 rounded-lg text-center">
-          <img src="./assets/images/training-session.jpg" alt="Coaching" class="h-40 w-full object-cover rounded mb-4">
-          <h3 class="text-xl font-semibold">Formation & Coaching</h3>
-          <p class="text-gray-600 mt-2">Renforcez les compétences de vos équipes dirigeantes et opérationnelles.</p>
+
+        <!-- Service 6 -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-6 hover:-translate-y-2 transition">
+          <img src="./assets/images/training-session.jpg" alt="Coaching & Formation" class="h-40 w-full object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-semibold mb-2">Coaching & Formation</h3>
+          <p class="text-gray-600">Renforcement des compétences stratégiques et leadership numérique.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- A propos -->
-  <section id="about" class="py-16 bg-gray-50">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-6">À propos</h2>
-      <p class="text-lg text-gray-600">StrategiMind Consulting est un cabinet spécialisé en transformation numérique, cybersécurité et adoption Cloud/IA. Notre mission : transformer votre vision en succès durable.</p>
-    </div>
-  </section>
-
-  <!-- Solutions -->
-  <section id="solutions" class="py-16 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-12">Nos Solutions</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="section-card bg-gray-50 p-6 rounded-lg">
-          <h3 class="text-xl font-semibold mb-2">GRC avec Intelligence Artificielle</h3>
-          <p class="text-gray-600">Une plateforme de Gouvernance, Risques et Conformité (GRC) intégrant l’IA pour automatiser vos processus et renforcer la sécurité.</p>
-        </div>
-        <div class="section-card bg-gray-50 p-6 rounded-lg">
-          <h3 class="text-xl font-semibold mb-2">Cybersécurité by Design</h3>
-          <p class="text-gray-600">Approche proactive pour intégrer la cybersécurité dans vos projets dès la conception.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Partenaires -->
-  <section id="partenaires" class="py-16 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-6 text-center">
+  <!-- PARTENAIRES -->
+  <section id="partenaires" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold mb-12">Nos Partenaires</h2>
-      <div class="flex justify-center items-center gap-12 flex-wrap">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="partner-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Gartner_logo.svg" alt="Gartner" class="partner-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/ArchiMate_logo.svg" alt="ArchiMate" class="partner-logo">
+      <div class="overflow-hidden">
+        <div class="animate-scroll space-x-20">
+          <img src="./Microsoft.png" alt="Microsoft" class="h-20 object-contain inline-block hover:scale-110 transition">
+          <img src="./garthner.png" alt="Gartner" class="h-20 object-contain inline-block hover:scale-110 transition">
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-16 bg-white">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold mb-6">Contactez-nous</h2>
-      <p class="text-gray-600 mb-6">Une question ? Un projet ? Parlons-en.</p>
-      <a href="mailto:contact@strategimind.ma" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700"><i class="fas fa-envelope mr-2"></i>contact@strategimind.ma</a>
-    </div>
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 bg-gradient-to-r from-blue-900 to-cyan-700 text-white text-center">
+    <h2 class="text-3xl font-bold mb-6">Prêt à transformer votre organisation ?</h2>
+    <p class="mb-8 text-lg text-gray-200">Contactez-nous pour une consultation gratuite et découvrez comment StrategiMind peut vous accompagner.</p>
+    <a href="mailto:contact@strategimind.ma" class="bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100">
+      <i class="fas fa-envelope mr-2"></i> contact@strategimind.ma
+    </a>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-6 text-center">
-    <p>© 2025 StrategiMind Consulting. Tous droits réservés.</p>
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+      <div>
+        <img src="./logo.png" alt="StrategiMind Logo" class="h-10 mb-4">
+        <p>Cabinet de conseil en cybersécurité & transformation numérique. Votre partenaire stratégique au Maroc.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Services</h4>
+        <ul class="space-y-2">
+          <li>Diagnostic Stratégique</li>
+          <li>Architecture d’Affaires</li>
+          <li>Gouvernance & Risques</li>
+          <li>Planification Stratégique</li>
+          <li>Cloud & IA</li>
+          <li>Coaching & Formation</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-4">Contact</h4>
+        <p><i class="fas fa-envelope mr-2"></i> contact@strategimind.ma</p>
+        <p><i class="fas fa-phone mr-2"></i> +212 722 039 772</p>
+        <p><i class="fas fa-map-marker-alt mr-2"></i> Casablanca, Maroc</p>
+      </div>
+    </div>
+    <div class="text-center border-t border-gray-700 mt-8 pt-6 text-sm">
+      © 2024 StrategiMind Consulting. Tous droits réservés.
+    </div>
   </footer>
 
 </body>
